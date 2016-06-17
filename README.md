@@ -33,7 +33,7 @@ akunku = [
 ```
 
 ### Set consumer and token (key,secret)
-we use tweepy for search user to mentions by keyword, you can get consumer key and screet from apps.twitter.com
+we use tweepy for search user to mentions by keyword, you can get consumer key and screet from [http://apps.twitter.com](http://apps.twitter.com)
 ```sh
 consumer_key    = "YOUR consumer_key"
 consumer_secret = "YOUR consumer_secret"
