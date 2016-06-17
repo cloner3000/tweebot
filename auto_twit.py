@@ -12,24 +12,25 @@ import tweepy
 
 
 print "=================================================================="
-print "                         AUTO TWEET AHAY                          "
+print "                        INDONESIA MERDEKA                         "
 print "=================================================================="
 #========================================================================
-# Username:Password
+
+# Set Twitter Accounts Username:Password
 akunku = [
     "usernameTwitter:passwordTwitter",
     "usernameTwitter:passwordTwitter",
-    "usernameTwitter:passwordTwitter" 
+    "usernameTwitter:passwordTwitter"
 ]
 
 ## ======================================================================
-# Token dari apps.twitter.com
+# consumer and token (key,secreet) from apps.twitter.com
 consumer_key    = "bdd05L329kbnQSiZeoDmlBgNg"
 consumer_secret = "dKhbOryGnCuH6o02R5oPgHzNUFbc565d3ARMwURw1JvruLOqhr"
 access_token        = "377459935-2QFkhdbF3ZyTmYx2g8eWQlHGUVOO1PV5GrGT7r98"
 access_token_secret = "bX9E5X5O0NOM0YazROfPHzekTCQAoDmsgnDnOTNAB47oc"
 ## =======================================================================
-# Ahay Configurasi
+# Configuration text,keyword,url and more
 hit = 100000000
 jeda_tweet   = 1
 config_tweet = [
