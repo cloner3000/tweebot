@@ -1,5 +1,8 @@
 ## PYTHON AUTO TWEET / MENTION WITH MECHANIZE
 
+![alt tag](https://raw.githubusercontent.com/aldiferdiyan/python_auto_tweet/master/ss.png)
+
+
 ### Installation
 
  - we use python 2.7,
@@ -13,7 +16,7 @@
 5. pip install random
 ```
 
-For running just run
+For running just
 ```python
 python auto_twit.py
 ```
