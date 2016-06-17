@@ -1,4 +1,4 @@
-# PYTHON AUTO TWEET / MENTION WITH MECHANIZE
+## PYTHON AUTO TWEET / MENTION WITH MECHANIZE
 
 ### Installation
 
@@ -66,3 +66,6 @@ config_tweet = [
 ```
 
 That's it ..
+
+##### Thanks To original developer
+[MR. DRAT](https://github.com/drat)
