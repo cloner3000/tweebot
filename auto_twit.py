@@ -25,10 +25,10 @@ akunku = [
 
 ## ======================================================================
 # consumer and token (key,secreet) from apps.twitter.com
-consumer_key    = "bdd05L329kbnQSiZeoDmlBgNg"
-consumer_secret = "dKhbOryGnCuH6o02R5oPgHzNUFbc565d3ARMwURw1JvruLOqhr"
-access_token        = "377459935-2QFkhdbF3ZyTmYx2g8eWQlHGUVOO1PV5GrGT7r98"
-access_token_secret = "bX9E5X5O0NOM0YazROfPHzekTCQAoDmsgnDnOTNAB47oc"
+consumer_key    = "YOUR consumer_key"
+consumer_secret = "YOUR consumer_secret"
+access_token        = "YOUR access_token"
+access_token_secret = "YOUR access_token_secret"
 ## =======================================================================
 # Configuration text,keyword,url and more
 hit = 100000000
