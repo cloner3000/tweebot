@@ -1,4 +1,5 @@
 ## PYTHON AUTO TWEET / MENTION WITH MECHANIZE
+Twitter tweet or mention users by keyword which has been set, this is very useful for the promotion or any
 
 ![alt tag](https://raw.githubusercontent.com/aldiferdiyan/python_auto_tweet/master/ss.png)
 
