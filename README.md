@@ -13,7 +13,7 @@
 5. pip install random
 ```
 
-Just run
+For running just run
 ```python
 python auto_twit.py
 ```
@@ -32,10 +32,10 @@ akunku = [
 ### Set consumer and token (key,secret)
 we use tweepy for search user to mentions by keyword, you can get consumer key and screet from apps.twitter.com
 ```sh
-consumer_key    = "bdd05L329kbnQSiZeoDmlBgNg"
-consumer_secret = "dKhbOryGnCuH6o02R5oPgHzNUFbc565d3ARMwURw1JvruLOqhr"
-access_token        = "377459935-2QFkhdbF3ZyTmYx2g8eWQlHGUVOO1PV5GrGT7r98"
-access_token_secret = "bX9E5X5O0NOM0YazROfPHzekTCQAoDmsgnDnOTNAB47oc"
+consumer_key    = "YOUR consumer_key"
+consumer_secret = "YOUR consumer_secret"
+access_token        = "YOUR access_token"
+access_token_secret = "YOUR access_token_secret"
 ```
 
 ### Set text,keyword,url and more

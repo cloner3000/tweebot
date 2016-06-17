@@ -118,6 +118,51 @@ def tweet(text,br):
     print "[FAILED] Gagal mengirimkan tweet!"
     #print test
 
+def write_log(log_text):
+    try:
+        with open("cari.log", "a") as log: log.write(log_text)
+    except:
+        print "Gagal save log"
+
+
+def cari_orang(kata_kunci):
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    #auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth)
+    users = []
+    for tweet in api.search(kata_kunci):
+        users.append(tweet.user.screen_name)
+    return users
+
+# generate text untuk status
+def start():
+        for x in range(0, hit):
+                for config in config_tweet:
+                    keywords  = config['keyword'].split(",")
+                    for key in keywords:
+                        users   = cari_orang(key)
+                        for user in users:
+                            akun_user = random.choice(akunku).split(":")
+                            log_user = akun_user[0] + "," + akun_user[1]
+                            print "Akun       : " + log_user
+                            br = login(akun_user[0], akun_user[1])
+                            time.sleep(jeda_tweet)
+                            kata = random.choice(config['kata'])
+                            status_tweet = "@"+user+" "+kata+" "+config['link']
+                            print "Keyword    : " + key
+                            print "Mention Ke : @" + user
+                            print "Text       : " + kata
+                            print "Link       : " + config['link']
+                            tweet(status_tweet, br)
+                            print "----------------------------------------------------------------------"
+                            print " "
+                            time.sleep(jeda_tweet)
+
+
+start()
+
+
+### JUST TEST        
 # # Unfollowing user
 # def unfollow(user,br):
 #   try:
@@ -147,11 +192,7 @@ def tweet(text,br):
 #   except:
 #     print "Gagal Logout "+user
 
-def write_log(log_text):
-    try:
-        with open("cari.log", "a") as log: log.write(log_text)
-    except:
-        print "Gagal save log"
+
 
 #
 # def get_text(link):
@@ -191,41 +232,5 @@ def write_log(log_text):
 #
 #   except:
 #     print "Error saat generate text"
-
-def cari_orang(kata_kunci):
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    #auth.set_access_token(access_token, access_token_secret)
-    api = tweepy.API(auth)
-    users = []
-    for tweet in api.search(kata_kunci):
-        users.append(tweet.user.screen_name)
-    return users
-
-# generate text untuk status
-def start():
-        for x in range(0, hit):
-                for config in config_tweet:
-                    keywords  = config['keyword'].split(",")
-                    for key in keywords:
-                        users   = cari_orang(key)
-                        for user in users:
-                            akun_user = random.choice(akunku).split(":")
-                            log_user = akun_user[0] + "," + akun_user[1]
-                            print "Akun       : " + log_user
-                            br = login(akun_user[0], akun_user[1])
-                            time.sleep(jeda_tweet)
-                            kata = random.choice(config['kata'])
-                            status_tweet = "@"+user+" "+kata+" "+config['link']
-                            print "Keyword    : " + key
-                            print "Mention Ke : @" + user
-                            print "Text       : " + kata
-                            print "Link       : " + config['link']
-                            tweet(status_tweet, br)
-                            print "----------------------------------------------------------------------"
-                            print " "
-                            time.sleep(jeda_tweet)
-
-
-start()
 
 #print cari_orang("bekasi")
